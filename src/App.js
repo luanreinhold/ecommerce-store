@@ -1,11 +1,13 @@
+import { Routes, Route } from 'react-router-dom';
 
+import Home from './routes/home/home.component';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <Routes>
+      <Route path='/' index element={<Home />} />
+    </Routes>
   );
-}
+};
 
 export default App;
